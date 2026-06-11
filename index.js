@@ -27,6 +27,7 @@ app.post("/submit-post", (req, res) => {
     id: postId++,
     title,
     content,
+    createdAt: new Date(),
   };
 
   posts.push(newPost);
@@ -69,6 +70,10 @@ app.post("/delete/:id", (req, res) => {
   const postId = parseInt(req.params.id);
   posts = posts.filter((p) => p.id != postId);
   res.redirect("/");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about");
 });
 
 app.listen(PORT, () => {

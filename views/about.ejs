@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Blog Board</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style/styles.css" />
+  </head>
+
+  <body class="bg-[#F6DDC3]">
+    <%- include("partials/header") %>
+
+    <main class="max-w-3xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-center mb-8" style="color: #eb4e00">
+        About Blog Board
+      </h1>
+
+      <div class="bg-white rounded-3xl shadow-lg p-8">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Blog Board is a simple blogging platform where users can create, edit,
+          view, and delete posts.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          This project was built using Node.js, Express.js, EJS, and Tailwind
+          CSS as part of my web development learning journey.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+          The goal of Blog Board is to provide a clean and simple space for
+          sharing thoughts, stories, and ideas.
+        </p>
+      </div>
+    </main>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>
